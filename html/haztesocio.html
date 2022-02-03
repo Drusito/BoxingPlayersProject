@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxing HTML</title>
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="script" href="../translator.js">
+    <script src="../translatorPartner.js" defer></script>
+
+</head>
+<body>
+    <header id = "header">
+        <!-- <button class="btn-mobile">---</button> -->
+        <div class="dropdown">
+            <span>&nbsp&nbsp_____ <br>&nbsp&nbsp_____ <br>&nbsp&nbsp_____</span>
+            <div class="dropdown-content">
+                <div class="dropdown-box">
+                    <a class="redirect" href="centros.html" id="t-centrosFitness-mobile">Centros Fitness</a>
+                </div>
+                <div class="dropdown-box">
+                    <a class="redirect" href="actividades.html" id="t-actividades-mobile">Actividades</a>
+                </div>
+                <div class="dropdown-box">
+                    <a class= "redirect" href="horarios.html" id="t-horarios-mobile">Horarios</a>
+                </div>
+                <div class="dropdown-box">
+                    <a class="redirect" href="haztesocio.html" id="t-hazteSocio-mobile">Hazte Socio</a>
+                </div>
+            </div>
+        </div>
+        <a href="index.html">
+            <img id = "logo" src="../img/logo.png" alt="BoxPlayers">
+        </a>   
+
+        <nav>
+            <ul>
+                <li> 
+                    <a class="redirect" href="centros.html" id="t-centrosFitness"> Centros Fitness</a>
+                </li> 
+                <li> 
+                    <a class="redirect" href="actividades.html"id="t-actividades">Actividades</a>
+                </li> 
+                <li> 
+                    <a class= "redirect" href="horarios.html"id="t-horarios">Horarios</a>
+                </li> 
+                <li> 
+                    <a class="redirect" href="haztesocio.html" id="t-hazteSocio">Hazte Socio</a>
+                </li> 
+                <li>
+                    <img class="flag" src="../img/Ingles.png" onclick="changeLanguage('en')" alt="English">
+                    <img class="flag" src="../img/Espana.png" onclick="changeLanguage('es')" alt="English">
+                </li> 
+            </ul>
+        </nav>
+    </header>
+    <div class="body-content">
+        <h1 id="t-hazteSocio-title">
+        HAZTE SOCIO
+        </h1>
+        <div class="formulario">
+            <form name="register" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                <p class="hidden">
+                    <label id="t-notHuman">
+                    Don’t fill this out if you’re human: <input name="bot-field" />
+                    </label>
+                </p>
+                <div class="form-group">
+                    <label for="first-name" id="t-first-name">Nombre</label>
+                    <input type="text" name="first-name" id="first-name" value="Oriol">
+                </div>
+                <div class="form-group">
+                    <label for="last-name" id="t-last-name">Apellidos</label>
+                    <input type="text" name="last-name" id="last-name" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="email" class="is-required" id="t-email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="example@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="iban" class="is-required" id="t-iban">IBAN</label>
+                    <input type="password" name="password" id="password" placeholder="ES00-0000-0000-0000-0000" required>
+                </div>
+                <div class="form-group">
+                    <label for="birthday" id="t-birthday">Fecha de Nacimiento</label>
+                    <input type="date" name="birthday" id="birthday">
+                </div>
+                <div class="form-group">
+                    <label id="t-horario">Horario</label>
+                    <input type="radio" name="horario" id="morning">
+                    <label for="morning" class="inline" id="t-morning">Mañana</label>
+                    <input type="radio" name="horario" id="evening">
+                    <label for="evening" class="inline" id="t-evening">Tarde</label>
+                    <input type="radio" name="horario" id="allday">
+                    <label for="all" class="inline" id="t-allday">Todo el día</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="city" id="t-city">City</label>
+                    <select name="city" id="city">
+                    <option value="*"></option>
+                    <option value="bcn" id="t-bcn">Barcelona</option>
+                    <option value="girona" id="t-girona">Madrid</option>
+                    <option value="tarragona" id="t-tarragona" selected>New York</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn" id="t-register">Register</button>
+
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div id="footer">
+            <div class="footer-box-container">
+                <div class="footer-box-block">
+                    <div>
+                        <a href="https://www.instagram.com/playersboxer/" target="_blank"><img class="img-sclmd" src="../img/insta-logo.png" alt=""></a>
+                    </div>
+                    <div id="blank-box"></div>
+                    <div class="footer-box">
+                        <h4 id="t-contact">Contacto</h4>
+                        <a class="redirect" href="tel:611623071">Telf : +34 611 62 30 71</a>
+                        <br>
+                        <a class="redirect" href="mailto:boxerplayers@gmail.com">E-mail: boxerplayers@boxing.com</a>
+                    </div>
+                    <div class="footer-box">
+                        <h4 id="t-direction">Dirección</h4>
+                        <a class="redirect" href="https://rb.gy/ewht63" target="_blank">Plaça del Nord 14, 08024 Barcelona</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

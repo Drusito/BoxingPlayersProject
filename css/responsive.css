@@ -1,0 +1,924 @@
+@media (min-width: 481px){
+html {
+    scroll-behavior: smooth;
+    background-color: black;
+    color: white;
+}
+
+
+.btn {
+    display: block;
+    color: black;
+    background-color: white;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    border: none;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    padding: 0.3rem;
+    margin: 0 auto;
+}
+
+.degradado{
+
+    background: linear-gradient(45deg, red,white);
+    -webkit-background-clip: text;
+    color: transparent;  
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+:root {
+    --primary-color: #ea5d40;
+    --second-color: #fceeeb;
+    --third-color: #752e20;
+    --fourth-color: #2e120c;
+    --fifth-color: orange;
+    --wrapper-width: 90vw;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 100%; 
+    margin: auto 0px;
+    
+}
+
+header {
+    z-index: 1;
+    background-color: black;
+    padding: 3rem 0rem;
+}
+
+
+.header nav ul li:hover{
+    background-color: red;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    padding-top: 1rem;
+}
+.text-center {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+#header {
+    position: sticky;
+    display: flex;
+    top: 0;
+    max-height: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner{
+    width: 100%;
+    height: 40rem;
+    align-items: center;
+    text-align: center;
+    background-image: url("../img/banner.jpg");  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position:top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #999;
+    position: sticky;
+}
+
+.titulo{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 3rem;
+
+    animation: primeranimacion 350ms ease-out 1;
+}
+
+@keyframes primeranimacion{
+    from{
+    transform: scale(4);
+    }
+    to{
+    transform: scale(1);
+    }
+
+}
+
+#logo{
+    position: relative;
+    left: 5rem;
+    max-width: 10rem;
+    max-height: 10rem;
+    align-items: flex-start;
+}
+li{
+    margin: 10px 0;
+}
+ul li{
+    display: inline;
+    padding: 4rem;
+    margin: auto;
+    color: white;
+}
+ul li a:link, ul li a:visited{
+    color: white;
+    text-decoration: none;
+}
+a:link a:visited a:active{
+    text-decoration: none;
+}
+.container-centros{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    }
+
+.item {
+    width: 30px;
+    height: 40px;
+    border-radius: 5px;
+
+}
+.item:hover{
+    box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+}
+
+.titulo-centros{
+    justify-content: start;
+}
+
+.item-centros{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    width: auto;
+    height: auto;
+    padding: 0px 2rem;
+}
+
+.nombre-ciudad{
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    text-align: center;
+}
+
+
+
+.img-centros{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+    filter: grayscale(100%);
+}
+.img-centros:hover{
+    filter: none;
+}
+
+#formulario0{
+    z-index: 1;
+    display: none;
+}
+#formulario1{
+    z-index: 1;
+    display: none;
+}
+#formulario2{
+    z-index: 1;
+    display: none;
+}
+
+.container-actividades{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 7rem;
+    grid-template-rows: 100px 100px;
+    padding: 10rem;
+    padding-top: 4rem;
+    margin: 3rem;
+    height: 100%;
+}
+
+.item-actividad{
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.39);
+    border-radius: 4%;
+}
+
+.img-actividad{
+    max-width: 100%;
+    height: 100%;
+}
+.item-actividad:hover{
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+    border-radius: 4%;
+}
+
+.body-content, #horario {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.body-content, #actividades {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 4rem 15rem;
+}
+
+#footer{
+    position: sticky;
+    display: inline;
+    bottom: 0;
+    max-height: 1rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/** Footer boxes */
+.footer-box-container{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 2rem;
+    border-top: 1px solid #727272;
+}
+
+.footer-box-block{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-box {
+    display: inline;
+    padding: 0 1.5rem;
+    border-left: 1px solid #727272;
+}
+
+.img-sclmd{
+    width: 100px;
+    height: 100px;
+}
+
+#blank-box{
+    display: inline;
+    width: 70rem;
+}
+
+.redirect{
+    color: white;
+    text-decoration: none;
+}
+
+.redirect:hover{
+    color: gray;
+}
+
+.redirect:visited{
+    color:none;
+}
+
+.social-media{
+    padding: 2rem;
+}
+.body-content{
+    padding: 2rem 0;
+}
+
+.formulario {
+    /* border-radius: 5px;
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; */
+}
+
+.map{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.actividades-content{
+    display: flex;
+    flex-direction: row;
+    padding-top: 5rem;
+}
+.centros-content{
+    display: flex;
+    flex-direction: row;
+    padding-top: 5rem;
+}
+#img-boxeo{
+    display: flex;
+    width: 550px;
+    height: 350px;
+    padding-top: 6rem;
+}
+.text-actividad {
+    justify-content: center;
+    text-align: justify;
+}
+
+.image-box{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+}
+.map-box{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hidden {display: none;}
+.is-required::after {
+    content: '*';
+    color: red;
+}
+
+form {
+    border: 2px solid var(--second-color);
+    border-radius: 4px;
+    padding: 2.5rem;
+}
+.form-group {
+    padding: 0.5rem;
+    margin-bottom: 0.4rem;
+}
+input, textarea {
+    border: 1px solid var(--second-color);
+    border-radius: 4px;
+    color: var(--second-color);
+}
+input:not(input[type="radio"], input[type="checkbox"]), textarea, select {
+    width: 100%;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+/* input:focus {
+    border-color: var(--primary-color);
+}
+No queda massa bé així que no ho posem, però perquè ho sapigueu.*/
+
+label {
+    display: block;
+    margin-bottom: 0.35rem;
+    font-size: 1.1rem;
+}
+.inline {
+    display: inline;
+}
+.dropdown {
+    position: relative;
+    display:none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown-box{
+    display: none;
+    border: 1px solid white;
+    padding: 1rem;
+}
+
+.dropdown:hover .dropdown-content {
+    display: none;
+}
+#text-hide-pc{
+    display: none;
+}
+.flag{
+    padding: 0 0.5rem;
+    width: 3rem;
+    height: 2rem;
+}
+.flag:hover{
+    cursor: pointer;
+}
+}
+/* FOR MOBILE */
+
+@media (max-width: 480px){
+    .btn-mobile{
+    display: block;
+    
+    }
+    nav{
+        display: none;
+    }
+    
+    .btn-mobile:hover ~ nav {
+    display: block;
+    
+    }
+    /* COMENTARIO */
+    
+        html {
+            scroll-behavior: smooth;
+            background-color: black;
+            color: white;
+        }
+        
+        p{
+            padding: 0rem 1.5rem;
+        }
+        
+        .btn {
+            display: block;
+            color: black;
+            background-color: white;
+            border-radius: 8px;
+            font-size: 1.5rem;
+            border: none;
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+            padding: 0.3rem;
+            margin: 0 auto;
+        }
+        
+        .degradado{
+        
+            background: linear-gradient(45deg,red,white);
+            -webkit-background-clip: text;
+            color: transparent;  
+        }
+        
+        .btn:hover{
+            background-color: black;
+            color: white;
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+        
+        :root {
+            --primary-color: #ea5d40;
+            --second-color: #fceeeb;
+            --third-color: #752e20;
+            --fourth-color: #2e120c;
+            --fifth-color: orange;
+            --wrapper-width: 90vw;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 100%; 
+            margin: auto 0px;
+            
+        }
+        
+        header {
+            z-index: 1;
+            background-color: black;
+            padding: 3rem 0rem;
+        }
+        
+        
+        .header nav ul li:hover{
+            background-color: red;
+        }
+        
+        h1{
+            color: white;
+            text-align: center;
+            padding-top: 1rem;
+        }
+        .text-center {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            margin-left: 10%;
+            margin-right: 10%;
+        
+        }
+        
+        #header {
+            position: sticky;
+            display: flex;
+            top: 0;
+            max-height: 1rem;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .banner{
+            width: 100%;
+            height: 25rem;
+            align-items: center;
+            text-align: center;
+            background-image: url("../img/banner.jpg");  
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-position:top center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-color: #999;
+            position: sticky;
+        }
+        
+        .titulo{
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-size: 3rem;
+        
+            animation: primeranimacion 350ms ease-out 1;
+        }
+        
+        @keyframes primeranimacion{
+            from{
+            transform: scale(4);
+            }
+            to{
+            transform: scale(1);
+            }
+        
+        }
+        
+        #logo {
+            position: relative;
+            left: 0rem;
+            max-width: 9rem;
+            max-height: 10rem;
+            align-items: flex-start;
+        }
+        li{
+            margin: 10px 0;
+        }
+        ul li{
+            display: inline;
+            padding: 2rem;
+            margin: auto;
+            color: white;
+        }
+        ul li a:link, ul li a:visited{
+            color: white;
+            text-decoration: none;
+        }
+            .container-centros {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 3rem;
+            }
+        
+        .item {
+            width: 30px;
+            height: 40px;
+            border-radius: 5px;
+        
+        }
+        .item:hover{
+            box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+        }
+        
+        .titulo-centros{
+            justify-content: start;
+        }
+        
+        .item-centros{
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            grid-template-columns: repeat(3, 1fr);
+            width: auto;
+            height: auto;
+            padding: 0px 2rem;
+        }
+        
+        .nombre-ciudad{
+            display: none;
+            position: absolute;
+            bottom: 30px;
+            right: 0;
+            left: 0;
+            margin-left: auto;
+            margin-right: auto;
+            width: 150px;
+            text-align: center;
+        }
+        
+        
+        
+        .img-centros{
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 5px;
+            filter: grayscale(100%);
+        }
+        .img-centros:hover{
+            filter: none;
+        }
+        
+        #formulario0{
+            z-index: 1;
+            display: none;
+        }
+        #formulario1{
+            z-index: 1;
+            display: none;
+        }
+        #formulario2{
+            z-index: 1;
+            display: none;
+        }
+        
+        .container-actividades{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 7rem;
+            grid-template-rows: 100px 100px;
+            padding: 10rem;
+            padding-top: 4rem;
+            margin: 3rem;
+            height: 100%;
+        }
+    
+        .item-actividad{
+            width: 300px;
+            height: 300px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.39);
+            border-radius: 4%;
+        }
+        
+        .img-actividad{
+            max-width: 100%;
+            height: 100%;
+        }
+        .item-actividad:hover{
+            width: 300px;
+            height: 300px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+            border-radius: 4%;
+        }
+        
+        .body-content{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+        
+        #footer{
+            position: sticky;
+            display: inline;
+            bottom: 0;
+            max-height: 1rem;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        /** Footer boxes */
+        .footer-box-container{
+            display: flex;
+            flex-direction: row;
+            padding: 0.5rem;
+            border-top: 1px solid #727272;
+        }
+        
+        .footer-box-block{
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .footer-box {
+            display: inline;
+            padding: 0 0.5rem;
+            border-left: 1px solid #727272;
+            font-size: 10px;
+        }
+        
+        .img-sclmd{
+            width: 4rem;
+            height: 4rem;
+            padding: 0.5rem;
+        }
+        
+        #blank-box{
+            display: none;
+            width: 55rem;
+        }
+        
+        .redirect{
+            color: white;
+            text-decoration: none;
+        }
+        
+        
+        .redirect:hover{
+            color: gray;
+        }
+        
+        .redirect:visited{
+            color:none;
+        }
+        
+        /* * {box-sizing: border-box;}
+        
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+        
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+            background-color: #45a049;
+        } */
+        .body-content{
+            padding: 2rem 0;
+        }
+        #horario{
+            width: 90%;
+            height: 100%;
+        }
+        
+        .formulario {
+            /* border-radius: 5px;
+            background-color: black;
+            padding: 20px;
+            display: flex;
+            flex-direction: column; */
+        }
+        .actividades-content{
+            display: flex;
+            flex-direction: column;
+            padding-top: 2rem;
+        }
+        .centros-content{
+            display: flex;
+            flex-direction: column;
+            padding-top: 5rem;
+            align-items: center;
+            justify-content: center;
+        }
+        #img-boxeo{
+            display: flex;
+            width: 90%;
+            height: 100%;
+        }
+        .text-actividad{
+            justify-content: center;
+            text-align: justify;
+    }
+        
+        .image-box{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .map-box{
+            height: 400px;
+            width: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .body-content #horario-content{
+            height: 700px;
+        }
+        
+.hidden {display: none;}
+.is-required::after {
+    content: '*';
+    color: red;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 60%;
+    border: 2px solid var(--second-color);
+    border-radius: 4px;
+    padding: 2.5rem;
+}
+.form-group {
+    padding: 0.5rem;
+    margin-bottom: 0.4rem;
+}
+input, textarea {
+    border: 1px solid var(--second-color);
+    border-radius: 4px;
+    color: var(--second-color);
+}
+input:not(input[type="radio"], input[type="checkbox"]), textarea, select {
+    width: 100%;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+/* input:focus {
+    border-color: var(--primary-color);
+}
+No queda massa bé així que no ho posem, però perquè ho sapigueu.*/
+
+label {
+    display: block;
+    margin-bottom: 0.35rem;
+    font-size: 1.1rem;
+}
+.inline {
+    display: inline;
+}
+        .button-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .dropdown {
+            position: relative;
+            display:list-item;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: black;
+            min-width: 160px;
+            box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+    
+        .dropdown-box{
+            display: flex;
+            flex-direction: row;
+            border: 1px solid white;
+            padding: 1rem;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        #text-hide-mobile{
+            display: none;
+        }
+        .flag{
+            padding: 0 0.35rem;
+            width: 3rem;
+            height: 2rem;
+        }
+        .flag:hover{
+            cursor: pointer;
+        }
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxing HTML</title>
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <script src="../translatorPartner.js" defer></script>
+
+</head>
+<body>
+    <header id = "header">
+        <!-- <button class="btn-mobile">---</button> -->
+        <div class="dropdown">
+            <span>&nbsp&nbsp_____ <br>&nbsp&nbsp_____ <br>&nbsp&nbsp_____</span>
+            <div class="dropdown-content">
+                <div class="dropdown-box">
+                    <a class="redirect" href="centros.html" id="t-centrosFitness-mobile">Centros Fitness</a>
+                </div>
+                <div class="dropdown-box">
+                    <a class="redirect" href="actividades.html" id="t-actividades-mobile">Actividades</a>
+                </div>
+                <div class="dropdown-box">
+                    <a class= "redirect" href="horarios.html" id="t-horarios-mobile">Horarios</a>
+                </div>
+                <div class="dropdown-box">
+                    <a class="redirect" href="haztesocio.html" id="t-hazteSocio-mobile">Hazte Socio</a>
+                </div>
+                <div class="dropdown-box">
+                    <img class="flag" src="../img/Ingles.png" onclick="changeLanguage('en')" alt="English">
+                    <img class="flag" src="../img/Espana.png" onclick="changeLanguage('es')" alt="English">
+                </div>
+            </div>
+        </div>
+        <a href="index.html">
+            <img id = "logo" src="../img/logo.png" alt="BoxPlayers">
+        </a>   
+
+        <nav>
+            <ul>
+                <li> 
+                    <a class="redirect" href="centros.html" id="t-centrosFitness"> Centros Fitness</a>
+                </li> 
+                <li> 
+                    <a class="redirect" href="actividades.html"id="t-actividades">Actividades</a>
+                </li> 
+                <li> 
+                    <a class= "redirect" href="horarios.html"id="t-horarios">Horarios</a>
+                </li> 
+                <li> 
+                    <a class="redirect" href="haztesocio.html" id="t-hazteSocio">Hazte Socio</a>
+                </li> 
+                <li>
+                    <img class="flag" src="../img/Ingles.png" onclick="changeLanguage('en')" alt="English">
+                    <img class="flag" src="../img/Espana.png" onclick="changeLanguage('es')" alt="English">
+                </li> 
+            </ul>
+        </nav>
+    </header>
+    <div class="body-content" id="actividades">
+        <h1 id="t-actividades-title">ACTIVIDADES</h1>
+        <div class="actividades-content">
+            <div class="image-box">
+                <img id="img-boxeo" src="../img/boxing_pau2.png" alt="">
+            </div>
+            <div class="text-actividad">
+                <h1>Boxing</h1>
+                <br>
+                <p id="tp1-boxing">En estas sesiones de boxeo, se hacen clases para todos los niveles, desde principiantes a avanzados, incluso los menores de edad pueden venir y aprender desde cero.</p>
+                <p id="tp2-boxing">En las clases se desarrolla tanto el nivel de boxeo como el físico, es un deporte muy completo, ya que usa todos los músculos del cuerpo, por lo que si tu objetivo es ponerte en forma de una forma divertida y más amena, es una buena opción.</p>
+                <p id="tp3-boxing">También disponemos de una gran cantidad de sacos y un amplio ring para realizar las sesiones de Sparring</p>
+                <p id="tp4-boxing">En ocasiones realizaremos ejercicios en grupo para practicar, pero si quieres puedes apuntarte a clases sin contacto, en las que solo se hacen ejercicios físicos y golpeo en el saco. Es ideal para todas aquellas personas que no quieren tener contacto, pero si quieren practicar el deporte</p>
+            </div>
+        </div>
+        <div class="actividades-content">
+            <div class="text-actividad" id="text-hide-mobile">
+                <h1>Sala de pesas</h1>
+                <br>
+                <p id="tp1-pesas">En estas sesiones realizamos solo ejercicio físico, destinado a fortalecer los músculos, en estas clases pueden participar tanto alumnos avanzados como principiantes, pero en este caso no pueden participar alumnos menores de 15 años </p>
+                <p id="tp2-pesas">En esta actividad disponemos de máquinas para trabajar tanto el tren inferior como el superior, así como el core y el cardio.</p>
+                <p id="tp3-pesas">En cuanto a los pesos, tenemos desde 2.5 Kg a 25 Kg, son de la famosa marca ATX, también tenemos varias cintas de correr, bicicletas de spinning, racs para las pesas y bancos. La sala cuenta con varios espejos de 125 metros cuadrados</p>
+            </div>
+            <div class="image-box">
+                <img id="img-boxeo" src="../img/Pesas.jpg" alt="">
+            </div>
+            <div class="text-actividad" id="text-hide-pc">
+                <h1>Sala de pesas</h1>
+                <p id="tp1-pesas-mobile">En estas sesiones realizamos solo ejercicio físico, destinado a fortalecer los músculos, en estas clases pueden participar tanto alumnos avanzados como principiantes, pero en este caso no pueden participar alumnos menores de 15 años </p>
+                <p id="tp2-pesas-mobile">En esta actividad disponemos de máquinas para trabajar tanto el tren inferior como el superior, así como el core y el cardio.</p>
+                <p id="tp3-pesas-mobile">En cuanto a los pesos, tenemos desde 2.5 Kg a 25 Kg, son de la famosa marca ATX, también tenemos varias cintas de correr, bicicletas de spinning, racs para las pesas y bancos. La sala cuenta con varios espejos de 125 metros cuadrados</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="footer">
+            <div class="footer-box-container">
+                <div class="footer-box-block">
+                    <div>
+                        <a href="https://www.instagram.com/playersboxer/" target="_blank"><img class="img-sclmd" src="../img/insta-logo.png" alt=""></a>
+                    </div>
+                    <div id="blank-box"></div>
+                    <div class="footer-box">
+                        <h4 id="t-contact">Contacto</h4>
+                        <a class="redirect" href="tel:611623071">Telf : +34 611 62 30 71</a>
+                        <br>
+                        <a class="redirect" href="mailto:boxerplayers@gmail.com">E-mail: boxerplayers@boxing.com</a>
+                    </div>
+                    <div class="footer-box">
+                        <h4 id="t-direction">Dirección</h4>
+                        <a class="redirect" href="https://rb.gy/ewht63" target="_blank">Plaça del Nord 14, 08024 Barcelona</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
