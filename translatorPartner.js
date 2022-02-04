@@ -63,6 +63,7 @@ document.getElementById('tp3-pesas-mobile').innerHTML = data.p3_pesas;
 }
 //Main Page
 else if(page == "index.html"){
+document.getElementById('t-centros').innerHTML = data.centros;
 document.getElementById('t-bannerTitle').innerHTML = data.bannerTitle;
 document.getElementById('t-cuota').innerHTML = data.bannerCuota;
 document.getElementById('t-bannerInput').innerHTML = data.hazteSocio;
